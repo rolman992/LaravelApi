@@ -9,6 +9,11 @@ Use App\Hotel;
 class HotelController extends Controller
 {
     //Funcion para mostrar toda la tabla de habitaciones
+    public function index()
+    {
+        return Hotel::all();
+    }
+    //Funcion para mostrar habitacion de la tabla de habitaciones segun id suministrado
     public function show(Hotel $hotel)
     {
         return $hotel;
